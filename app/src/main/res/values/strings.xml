@@ -4,4 +4,8 @@
     <string name="button_register">Регистарация</string>
     <string name="password_input">Password</string>
     <string name="email_input">Email</string>
+    <string name="register_text">Регистрация</string>
+    <string name="register_name">Имя</string>
+    <string name="register_familyname">Фамилия</string>
+
 </resources>
