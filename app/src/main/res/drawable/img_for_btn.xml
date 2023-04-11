@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="21dp"
+    android:height="21dp"
+    android:viewportWidth="21"
+    android:viewportHeight="21">
+
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#084B97"
+        android:strokeWidth="2"
+        android:strokeLineJoin="round"
+        android:strokeLineCap="round"
+        android:pathData="M15 4C15 4.53043 15.2371 5.03914 15.659 5.41421C16.081 5.78929 16.6533 6 17.25 6C17.8467 6 18.419 5.78929 18.841 5.41421C19.2629 5.03914 19.5 4.53043 19.5 4C19.5 3.46957 19.2629 2.96086 18.841 2.58579C18.419 2.21071 17.8467 2 17.25 2C16.6533 2 16.081 2.21071 15.659 2.58579C15.2371 2.96086 15 3.46957 15 4Z" />
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#084B97"
+        android:strokeWidth="2"
+        android:strokeLineJoin="round"
+        android:strokeLineCap="round"
+        android:pathData="M1 17C1 17.5304 1.23705 18.0391 1.65901 18.4142C2.08097 18.7893 2.65326 19 3.25 19C3.84674 19 4.41903 18.7893 4.84099 18.4142C5.26295 18.0391 5.5 17.5304 5.5 17C5.5 16.4696 5.26295 15.9609 4.84099 15.5858C4.41903 15.2107 3.84674 15 3.25 15C2.65326 15 2.08097 15.2107 1.65901 15.5858C1.23705 15.9609 1 16.4696 1 17Z" />
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#084B97"
+        android:strokeWidth="2"
+        android:strokeLineJoin="round"
+        android:strokeLineCap="round"
+        android:pathData="M17.7143 7V12C17.7143 13.3261 17.0746 14.5979 15.936 15.5355C14.7974 16.4732 13.2531 17 11.6429 17H8M8 17L11.6429 14M8 17L11.6429 20" />
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#084B97"
+        android:strokeWidth="2"
+        android:strokeLineJoin="round"
+        android:strokeLineCap="round"
+        android:pathData="M3 14V9C3 7.67392 3.63967 6.40215 4.77828 5.46447C5.91689 4.52678 7.46119 4 9.07143 4H12.7143M12.7143 4L9.07143 1M12.7143 4L9.07143 7" />
+</vector>

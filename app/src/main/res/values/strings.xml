@@ -7,5 +7,15 @@
     <string name="register_text">Регистрация</string>
     <string name="register_name">Имя</string>
     <string name="register_familyname">Фамилия</string>
+    <string name="route_where">Откуда</string>
+    <string name="route_to">Куда</string>
+    <string name="route_date">Дата</string>
+    <string name="route_text">Маршрут</string>
+    <string-array name="cities">
+        <item color="#085CB8">Брянск</item>
+        <item color="#085CB8">Москва</item>
+        <item color="#085CB8">Новгород</item>
+        <item color="#085CB8">Смоленск</item>
+    </string-array>
 
 </resources>
