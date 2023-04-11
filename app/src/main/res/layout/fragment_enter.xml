@@ -18,7 +18,7 @@
         android:layout_width="365dp"
         android:layout_height="273dp"
         android:layout_marginTop="76dp"
-        android:foreground="@drawable/Rectangle"
+        android:foreground="@drawable/rectangle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -31,17 +31,16 @@
         android:layout_marginTop="12dp"
         android:backgroundTint="#085CB9"
         android:text="@string/button_enter"
-        android:textAlignment="viewStart"
+        android:textAlignment="textStart"
         android:textColor="@color/white"
+        android:textIsSelectable="false"
         app:cornerRadius="45px"
-        app:icon="@drawable/vector"
-        app:iconGravity="textEnd"
-        app:iconPadding="21dp"
-        app:iconTintMode="multiply"
+        app:icon="@drawable/login_ico"
+        app:iconGravity="end"
         app:layout_constraintBottom_toBottomOf="@+id/view2"
         app:layout_constraintStart_toStartOf="@+id/editTextTextPassword2"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword2"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.02" />
 
     <Button
         android:id="@+id/button_register"
