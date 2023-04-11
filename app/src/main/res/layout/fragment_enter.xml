@@ -17,7 +17,7 @@
         android:id="@+id/view2"
         android:layout_width="365dp"
         android:layout_height="273dp"
-        android:layout_marginTop="76dp"
+        android:layout_marginTop="124dp"
         android:foreground="@drawable/rectangle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -96,5 +96,16 @@
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="@+id/view2"
         app:layout_constraintTop_toTopOf="@+id/view2" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="184dp"
+        android:layout_height="59dp"
+        android:fontFamily="sans-serif"
+        android:text="Вход"
+        android:textColor="@color/origin"
+        android:textSize="48sp"
+        tools:layout_editor_absoluteX="9dp"
+        tools:layout_editor_absoluteY="7dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
