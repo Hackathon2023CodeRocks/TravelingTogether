@@ -17,8 +17,9 @@
         android:id="@+id/imageView2"
         android:layout_width="387dp"
         android:layout_height="685dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="28dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
         app:layout_constraintStart_toStartOf="@+id/view3"
         app:layout_constraintTop_toBottomOf="@+id/textView"
         app:srcCompat="@drawable/register_bg" />
@@ -37,15 +38,15 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/nameEditText"
         android:layout_width="300dp"
         android:layout_height="48dp"
         android:layout_marginTop="32dp"
         android:background="@drawable/bg_white_rounded"
         android:ems="10"
+        android:hint="Введите ваше имя"
         android:inputType="textPersonName"
         android:paddingLeft="25px"
-        android:text="@string/register_name"
         android:textColor="#085CB8"
         android:textColorHighlight="#085CB8"
         app:layout_constraintEnd_toEndOf="@+id/imageView2"
@@ -54,49 +55,35 @@
         app:layout_constraintTop_toTopOf="@+id/imageView2" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/emailEditText"
         android:layout_width="300dp"
         android:layout_height="48dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="28dp"
         android:background="@drawable/bg_white_rounded"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:hint="Введите email"
         android:paddingLeft="25px"
-        android:text="@string/register_familyname"
         android:textColor="#085CB8"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        app:layout_constraintStart_toStartOf="@+id/nameEditText"
+        app:layout_constraintTop_toBottomOf="@+id/nameEditText" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress2"
+        android:id="@+id/passwordEditText"
         android:layout_width="300dp"
         android:layout_height="48dp"
         android:layout_marginTop="28dp"
         android:background="@drawable/bg_white_rounded"
         android:ems="10"
-        android:inputType="textEmailAddress"
-        android:paddingLeft="25px"
-        android:text="@string/email_input"
-        android:textColor="#085CB8"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName2"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
-
-    <EditText
-        android:id="@+id/editTextTextPassword3"
-        android:layout_width="300dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="28dp"
-        android:background="@drawable/bg_white_rounded"
-        android:ems="10"
+        android:hint="Введите пароль"
         android:inputType="textPassword"
         android:paddingLeft="25px"
-        android:text="@string/password_input"
         android:textColor="#085CB8"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextEmailAddress2"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress2" />
+        app:layout_constraintStart_toStartOf="@+id/emailEditText"
+        app:layout_constraintTop_toBottomOf="@+id/emailEditText" />
 
     <Button
-        android:id="@+id/register_button"
+        android:id="@+id/registerButton"
         android:layout_width="213dp"
         android:layout_height="48dp"
         android:layout_marginTop="32dp"
@@ -108,10 +95,11 @@
         android:textColor="#085CB9"
         android:textColorHighlight="#085CB9"
         app:cornerRadius="45px"
+        android:onClick="onRegisterButtonClick"
         app:icon="@drawable/login_ico"
         app:iconGravity="end"
         app:iconTint="#085CB9"
         app:layout_constraintEnd_toEndOf="@+id/imageView2"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword3" />
+        app:layout_constraintTop_toBottomOf="@+id/passwordEditText" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
