@@ -11,6 +11,9 @@
     <string name="route_to">Куда</string>
     <string name="route_date">Дата</string>
     <string name="route_text">Маршрут</string>
+    <string name="route_create">Создать поездку</string>
+    <string name="route_find">Найти</string>
+
     <string-array name="cities">
         <item color="#085CB8">Брянск</item>
         <item color="#085CB8">Москва</item>
