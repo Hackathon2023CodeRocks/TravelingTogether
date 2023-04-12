@@ -23,17 +23,6 @@
         app:layout_constraintTop_toTopOf="@+id/view_route"
         app:srcCompat="@drawable/rout_bg" />
 
-    <CalendarView
-        android:id="@+id/calendarView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:background="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
-        app:layout_constraintStart_toStartOf="@+id/view_route"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
-
     <Spinner
         android:id="@+id/button4"
         android:layout_width="125dp"
@@ -51,11 +40,11 @@
         app:layout_constraintTop_toTopOf="@+id/imageView" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/open_calendar"
         android:layout_width="134dp"
-        android:layout_height="48dp"
+        android:layout_height="49dp"
         android:layout_marginStart="225dp"
-        android:layout_marginTop="203dp"
+        android:layout_marginTop="202dp"
         android:backgroundTint="#FFFFFF"
         android:shadowRadius="0"
         android:text="@string/route_date"
