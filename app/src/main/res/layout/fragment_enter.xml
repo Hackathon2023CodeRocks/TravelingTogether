@@ -28,7 +28,9 @@
         style="@style/Theme.TravelingTogether"
         android:layout_width="115dp"
         android:layout_height="48dp"
+        android:layout_marginStart="64dp"
         android:layout_marginTop="12dp"
+        android:layout_marginBottom="40dp"
         android:backgroundTint="#085CB9"
         android:text="@string/button_enter"
         android:textAlignment="textStart"
@@ -38,8 +40,7 @@
         app:icon="@drawable/login_ico"
         app:iconGravity="end"
         app:layout_constraintBottom_toBottomOf="@+id/view2"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPassword2"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword2"
+        app:layout_constraintStart_toStartOf="@+id/view"
         app:layout_constraintVertical_bias="0.02" />
 
     <Button
@@ -47,6 +48,7 @@
         style="@style/Theme.TravelingTogether"
         android:layout_width="125dp"
         android:layout_height="48dp"
+        android:layout_marginEnd="79dp"
         android:autoText="false"
         android:backgroundTint="#FFFFFF"
         android:backgroundTintMode="add"
@@ -59,10 +61,10 @@
         android:textColor="@color/black"
         app:cornerRadius="45px"
         app:layout_constraintBottom_toBottomOf="@+id/button_enter"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword2" />
+        app:layout_constraintEnd_toEndOf="@+id/view" />
 
     <EditText
-        android:id="@+id/editTextTextPassword2"
+        android:id="@+id/passwordEditText"
         android:layout_width="254dp"
         android:layout_height="48dp"
         android:layout_marginTop="12dp"
@@ -72,15 +74,15 @@
         android:hint="Пароль"
         android:inputType="textPassword"
         android:paddingLeft="20px"
-        android:textColorHint="@color/origin"
         android:textColor="@color/black"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextEmailAddress3"
+        android:textColorHint="@color/origin"
+        app:layout_constraintEnd_toEndOf="@+id/emailEditText"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextEmailAddress3"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress3" />
+        app:layout_constraintStart_toStartOf="@+id/emailEditText"
+        app:layout_constraintTop_toBottomOf="@+id/emailEditText" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress3"
+        android:id="@+id/emailEditText"
         style="@style/Widget.AppCompat.EditText"
         android:layout_width="254dp"
         android:layout_height="48dp"
