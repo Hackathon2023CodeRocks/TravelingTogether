@@ -16,7 +16,7 @@ import java.util.List;
 public class TravelersFragment extends Fragment {
     private ListView listView;
     private Button goButton;
-    private List<Drivers> driversList = new ArrayList<>();
+    public List<Drivers> driversList = new ArrayList<>();
     @SuppressLint("MissingInflatedId")
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -27,9 +27,9 @@ public class TravelersFragment extends Fragment {
         listView = view.findViewById(R.id.driver_list);
         goButton = view.findViewById(R.id.go_button);
 
-        driversList.add(new Drivers("Вася", 2, 500.0, R.drawable.profile));
-        driversList.add(new Drivers("Петя", 4, 300.0, R.drawable.profile));
-        driversList.add(new Drivers("Иван", 1, 700.0, R.drawable.profile));
+        driversList.add(new Drivers("Вася", 2, 500, R.drawable.profile));
+        driversList.add(new Drivers("Петя", 4, 300, R.drawable.profile));
+        driversList.add(new Drivers("Иван", 1, 700, R.drawable.profile));
 
         DriversAdapter adapter = new DriversAdapter(getContext(), R.layout.list_drivers, driversList);
         listView.setAdapter(adapter);

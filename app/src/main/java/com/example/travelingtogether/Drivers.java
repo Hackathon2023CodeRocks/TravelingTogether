@@ -3,10 +3,10 @@ package com.example.travelingtogether;
 public class Drivers {
     private String name;
     private int freeSeats;
-    private double price;
+    private int price;
     private int imageId;
 
-    public Drivers(String name, int freeSeats, double price, int imageId) {
+    public Drivers(String name, int freeSeats, int price, int imageId) {
         this.name = name;
         this.freeSeats = freeSeats;
         this.price = price;
@@ -21,7 +21,7 @@ public class Drivers {
         return freeSeats;
     }
 
-    public double getPrice() {
+    public int getPrice() {
         return price;
     }
 

@@ -16,6 +16,8 @@
     <string name="profile_text">Профиль</string>
     <string name="profile_name">Джон</string>
     <string name="profile_email">qwerty123@gmail.com</string>
+    <string name="free_seats">Free seats: %d</string>
+    <string name="price">Price: %d</string>
 
     <string-array name="cities">
         <item>Брянск</item>
