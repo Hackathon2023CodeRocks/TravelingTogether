@@ -41,12 +41,12 @@
         android:id="@+id/nameEditText"
         android:layout_width="300dp"
         android:layout_height="48dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="36dp"
         android:background="@drawable/bg_white_rounded"
         android:ems="10"
         android:hint="Введите ваше имя"
-        android:inputType="textPersonName"
         android:paddingLeft="25px"
+        android:textColorHint="@color/origin"
         android:textColor="#085CB8"
         android:textColorHighlight="#085CB8"
         app:layout_constraintEnd_toEndOf="@+id/imageView2"
@@ -58,14 +58,15 @@
         android:id="@+id/emailEditText"
         android:layout_width="300dp"
         android:layout_height="48dp"
-        android:layout_marginStart="4dp"
+        android:layout_marginStart="44dp"
         android:layout_marginTop="28dp"
         android:background="@drawable/bg_white_rounded"
         android:ems="10"
         android:hint="Введите email"
         android:paddingLeft="25px"
+        android:textColorHint="@color/origin"
         android:textColor="#085CB8"
-        app:layout_constraintStart_toStartOf="@+id/nameEditText"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
         app:layout_constraintTop_toBottomOf="@+id/nameEditText" />
 
     <EditText
@@ -76,9 +77,9 @@
         android:background="@drawable/bg_white_rounded"
         android:ems="10"
         android:hint="Введите пароль"
-        android:inputType="textPassword"
         android:paddingLeft="25px"
         android:textColor="#085CB8"
+        android:textColorHint="@color/origin"
         app:layout_constraintStart_toStartOf="@+id/emailEditText"
         app:layout_constraintTop_toBottomOf="@+id/emailEditText" />
 

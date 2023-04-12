@@ -15,10 +15,10 @@
     <string name="route_find">Найти</string>
 
     <string-array name="cities">
-        <item color="#085CB8">Брянск</item>
-        <item color="#085CB8">Москва</item>
-        <item color="#085CB8">Новгород</item>
-        <item color="#085CB8">Смоленск</item>
+        <item>Брянск</item>
+        <item>Москва</item>
+        <item>Новгород</item>
+        <item>Смоленск</item>
     </string-array>
 
 </resources>
