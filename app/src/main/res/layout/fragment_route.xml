@@ -30,7 +30,7 @@
         android:layout_marginTop="52dp"
         android:layout_marginEnd="132dp"
         android:background="#fff"
-        android:entries="@array/cities"
+        android:entries="@array/cities2"
         android:paddingLeft="25px"
         android:popupBackground="@color/background_light"
         android:spinnerMode="dialog"

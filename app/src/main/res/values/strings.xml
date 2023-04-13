@@ -37,5 +37,11 @@
         <item>Новгород</item>
         <item>Смоленск</item>
     </string-array>
+    <string-array name="cities2">
+        <item>Москва</item>
+        <item>Брянск</item>
+        <item>Новгород</item>
+        <item>Смоленск</item>
+    </string-array>
 
 </resources>
