@@ -25,7 +25,6 @@ public class TravelersFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_travelers, container,false);
 
         listView = view.findViewById(R.id.driver_list);
-        goButton = view.findViewById(R.id.go_button);
 
         driversList.add(new Drivers("Вася", 2, 500, R.drawable.profile));
         driversList.add(new Drivers("Петя", 4, 300, R.drawable.profile));
@@ -34,12 +33,6 @@ public class TravelersFragment extends Fragment {
         DriversAdapter adapter = new DriversAdapter(getContext(), R.layout.list_drivers, driversList);
         listView.setAdapter(adapter);
 
-        goButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Действие при нажатии на кнопку "поехать"
-            }
-        });
         return view;
     }
 }

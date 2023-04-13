@@ -26,6 +26,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <View
+        android:id="@+id/view5"
+        android:layout_width="365dp"
+        android:layout_height="273dp"
+        android:foreground="@drawable/bg_white_rounded"
+        app:layout_constraintBottom_toBottomOf="@+id/view4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.434"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9"
+        app:layout_constraintVertical_bias="0.492" />
+
     <ImageView
         android:id="@+id/imageView11"
         android:layout_width="30dp"
@@ -58,6 +70,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="221dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="256dp"
+        android:fontFamily="sans-serif"
+        android:text="Активная поездка"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="105dp"
@@ -65,10 +90,10 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="20dp"
         android:backgroundTint="@color/white"
-        android:tint="@color/white"
         app:layout_constraintStart_toStartOf="@+id/view4"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:srcCompat="@drawable/profile" />
+        app:srcCompat="@drawable/profile"
+        app:tint="@color/white" />
 
     <TextView
         android:id="@+id/textView5"
@@ -107,5 +132,52 @@
         app:layout_constraintBottom_toBottomOf="@+id/imageView8"
         app:layout_constraintStart_toEndOf="@+id/imageView8"
         app:srcCompat="@drawable/exclude" />
+
+    <ImageView
+        android:id="@+id/driver_image"
+        android:layout_width="76dp"
+        android:layout_height="78dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view5"
+        app:layout_constraintEnd_toEndOf="@+id/view5"
+        app:layout_constraintHorizontal_bias="0.046"
+        app:layout_constraintStart_toStartOf="@+id/view5"
+        app:layout_constraintTop_toTopOf="@+id/view5"
+        app:layout_constraintVertical_bias="0.117"
+        tools:srcCompat="@drawable/profile" />
+
+    <TextView
+        android:id="@+id/driver_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="332dp"
+        android:text="@string/Name"
+        app:layout_constraintStart_toEndOf="@+id/driver_image"
+        app:layout_constraintTop_toTopOf="@+id/view4" />
+
+    <TextView
+        android:id="@+id/driver_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/price"
+        app:layout_constraintBottom_toTopOf="@+id/driver_seats"
+        app:layout_constraintEnd_toEndOf="@+id/driver_name"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/driver_name"
+        app:layout_constraintTop_toBottomOf="@+id/driver_name"
+        app:layout_constraintVertical_bias="0.512" />
+
+    <TextView
+        android:id="@+id/driver_seats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="404dp"
+        android:text="@string/free_seats"
+        app:layout_constraintBottom_toBottomOf="@+id/view5"
+        app:layout_constraintEnd_toEndOf="@+id/driver_price"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/driver_price"
+        app:layout_constraintTop_toTopOf="@+id/view4"
+        app:layout_constraintVertical_bias="0.041" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
