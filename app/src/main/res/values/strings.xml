@@ -29,6 +29,7 @@
     <string name="car_name_str">Reanault Logan</string>
     <string name="car_number_str">Т861АК 777RU</string>
     <string name="car_num_of_str">4</string>
+    <string name="active_travels">Активные поездки</string>
 
     <string-array name="cities">
         <item>Брянск</item>
