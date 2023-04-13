@@ -18,6 +18,18 @@
     <string name="profile_email">qwerty123@gmail.com</string>
     <string name="free_seats">Free seats: %d</string>
     <string name="price">Price: %d</string>
+    <string name="where_text">Откуда: </string>
+    <string name="to_text">Куда: </string>
+    <string name="price_text">Цена: </string>
+    <string name="create_travel_text">Создание поездки</string>
+    <string name="car">Машина</string>
+    <string name="car_name">Название: </string>
+    <string name="car_number">Номер: </string>
+    <string name="car_num_of">Кол-во мест: </string>
+    <string name="car_name_str">Reanault Logan</string>
+    <string name="car_number_str">Т861АК 777RU</string>
+    <string name="car_num_of_str">4</string>
+
 
     <string-array name="cities">
         <item>Брянск</item>
