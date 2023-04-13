@@ -1,5 +1,6 @@
 package com.example.travelingtogether;
 
+import android.annotation.SuppressLint;
 import android.app.DatePickerDialog;
 import android.app.Dialog;
 import android.content.Context;
@@ -17,18 +18,24 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.DialogFragment;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
 import java.util.Calendar;
 
 public class RouteFragment extends Fragment {
 
     private Button calendarButton;
+    private  Button searchButton;
+    private Button createButton;
 
+    @SuppressLint("MissingInflatedId")
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_route, container, false);
 
         calendarButton = view.findViewById(R.id.open_calendar);
+        searchButton = view.findViewById(R.id.search_btn);
+        createButton = view.findViewById(R.id.create_btn);
         calendarButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -46,6 +53,28 @@ public class RouteFragment extends Fragment {
                             }
                         }, year, month, dayOfMonth);
                 datePickerDialog.show();
+            }
+        });
+
+        searchButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Fragment travelersFragment = new TravelersFragment();
+                FragmentTransaction transaction = getParentFragmentManager().beginTransaction();
+                transaction.replace(R.id.fragment_container, travelersFragment);
+                transaction.addToBackStack(null);
+                transaction.commit();
+            }
+        });
+
+        createButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Fragment createTravelFragment = new CreateTravelFragment();
+                FragmentTransaction transaction = getParentFragmentManager().beginTransaction();
+                transaction.replace(R.id.fragment_container,createTravelFragment );
+                transaction.addToBackStack(null);
+                transaction.commit();
             }
         });
 

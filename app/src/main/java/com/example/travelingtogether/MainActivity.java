@@ -14,7 +14,9 @@ import com.google.android.material.navigation.NavigationBarView;
 
 public class MainActivity extends AppCompatActivity {
     private BottomNavigationView bottomNavigationView;
-
+    public interface OnDriverAddedListener{
+        void onDriverAdded(Drivers drivers);
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+
 
 
     }

@@ -17,6 +17,10 @@ public class TravelersFragment extends Fragment {
     private ListView listView;
     private Button goButton;
     public List<Drivers> driversList = new ArrayList<>();
+    public void onDriverAdded(Drivers drivers)
+    {
+        driversList.add(drivers);
+    }
     @SuppressLint("MissingInflatedId")
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -35,4 +39,5 @@ public class TravelersFragment extends Fragment {
 
         return view;
     }
+
 }
